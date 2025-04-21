@@ -1,0 +1,155 @@
+body {
+    background: linear-gradient(to bottom right, #1c1b29, #2e2c3f);
+    font-family: "Montserrat", sans-serif;
+    color: #eee;
+}
+
+.crypto-header {
+    background: #1f1833; /* ungu gelap */
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.crypto-prices {
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#coin-nav {
+    background: #2c273a;
+}
+
+#coin-nav .btn {
+    background-color: #3a3450;
+    color: #eee;
+    border: 1px solid #4c4560;
+}
+
+#coin-nav .btn:hover {
+    background-color: #5d5380;
+    color: #fff;
+}
+
+#coin-nav .btn span:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+#coin-nav .btn span:last-child {
+    font-family: monospace;
+    color: #00d084;
+}
+.object-fit-cover {
+    object-fit: cover;
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+  
+
+.bg-light {
+    background-color: #40395a !important;
+    color: #fff;
+}
+
+.bg-secondary {
+    background-color: #5b4f7a !important;
+    color: #fff !important;
+}
+
+.text-muted {
+    color: #bdbdbd !important;
+}
+
+.text-primary {
+    color: #b388ff !important;
+}
+
+footer {
+    background-color: #1f1833;
+    color: #ccc;
+}
+
+footer h6 {
+    color: white;
+}
+
+h3, h6 {
+    color: #b388ff;
+}
+
+.text-warning {
+    color: #ffcc00 !important;
+}
+
+.tab-menu span {
+    cursor: pointer;
+}
+
+.tab-menu span:hover {
+    text-decoration: underline;
+}
+
+
+.marquee-wrapper {
+    overflow: hidden;
+    width: 100%;
+    background: #2c273a;
+    border-bottom: 1px solid #444;
+    padding: 10px 0;
+  }
+  
+  .marquee-content {
+    display: flex;
+    width: max-content;
+    animation: scrollLeft 30s linear infinite;
+  }
+  
+  .coin-row {
+    display: flex;
+  }
+  
+  .coin-item {
+    display: flex;
+    align-items: center;
+    background: #3a3450;
+    border: 1px solid #4c4560;
+    border-radius: 999px;
+    padding: 6px 14px;
+    margin: 0 6px;
+    font-size: 14px;
+    white-space: nowrap;
+    gap: 6px;
+  }
+  
+  .coin-name {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .coin-price {
+    font-family: monospace;
+    transition: color 0.3s ease;
+  }
+  
+  .green {
+    color: #00ff88 !important;
+  }
+  
+  .red {
+    color: #ff4d4d !important;
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }

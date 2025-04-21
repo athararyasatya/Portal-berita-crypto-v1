@@ -1,0 +1,140 @@
+
+body {
+    background: linear-gradient(to bottom right, #1c1b29, #2e2c3f);
+    font-family: "Montserrat", sans-serif;
+    color: #eee;
+}
+
+.crypto-header {
+    background: #1f1833; /* ungu gelap */
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    letter-spacing: 1px;
+    font-style: italic;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.crypto-prices {
+    background-color: #fff;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#coin-nav {
+    background: #2c273a;
+}
+
+#coin-nav .btn {
+    background-color: #3a3450;
+    color: #eee;
+    border: 1px solid #4c4560;
+}
+
+#coin-nav .btn:hover {
+    background-color: #5d5380;
+    color: #fff;
+}
+
+#coin-nav .btn span:first-child {
+    font-weight: bold;
+    color: #fff;
+}
+
+#coin-nav .btn span:last-child {
+    font-family: monospace;
+    color: #00d084;
+}
+.object-fit-cover {
+    object-fit: cover;
+  }
+  .object-fit-cover {
+    object-fit: cover;
+  }
+.crypto-table {
+    background-color: #2c273a;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 14px;
+  }
+  
+  .crypto-table thead th {
+    background-color: #3a3450;
+    color: #fff;
+  }
+  
+  .crypto-table tbody tr {
+    transition: background-color 0.3s ease;
+  }
+  
+  .crypto-table tbody tr:hover {
+    background-color: #4c4560;
+  }
+  
+  .crypto-table td,
+  .crypto-table th {
+    vertical-align: middle;
+  }
+  
+  .text-up {
+    color: #00ff88;
+    font-weight: bold;
+  }
+  
+  .text-down {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  .text-up {
+    color: #00ff88;
+    font-weight: bold;
+  }
+  
+  .text-down {
+    color: #ff4d4d;
+    font-weight: bold;
+  }
+  .green {
+    color: #00ff7f;
+  }
+  .red {
+    color: #ff4d4d;
+  }
+  .arrow-up::before {
+    content: "▲";
+    margin-right: 3px;
+  }
+  .arrow-down::before {
+    content: "▼";
+    margin-right: 3px;
+  }
+  
+  @media (max-width: 768px) {
+    .table-responsive {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      position: relative;
+    }
+  
+    .crypto-table {
+      min-width: 900px;
+      border-collapse: separate;
+      border-spacing: 0;
+    }
+
+    .crypto-table th:nth-child(1),
+    .crypto-table td:nth-child(1) {
+      position: sticky;
+      left: 0;
+      z-index: 3;
+    }
+  
+    .crypto-table th:nth-child(2),
+    .crypto-table td:nth-child(2) {
+      position: sticky;
+      left: 40px; /* Sesuaikan dengan lebar kolom pertama */
+      z-index: 4;
+    }
+
+  }
+  
