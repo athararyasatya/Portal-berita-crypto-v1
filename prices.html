@@ -27,12 +27,27 @@
   </div>
 
   <!-- Tabs -->
-  <div class="d-flex justify-content-center gap-3 py-2 bg-grey border-bottom">
-    <a href="index.html" class="text-muted text-decoration-none">News</a>
-    <span class="text-primary fw-bold">Prices</span>
-    <a href="#" class="text-muted text-decoration-none">Categories</a>
-    <a href="#" class="text-muted text-decoration-none">Rating</a>
+  <div class="d-flex justify-content-center gap-3 py-2 bg-grey border-bottom flex-column align-items-center ">
+    <div class="d-flex gap-3 tab-menu">
+      <a href="index.html" class=" text-muted fw-bold  text-decoration-none">News</a>
+      <a href="prices.html" class=" text-primary text-muted  fw-bold text-decoration-none">Prices</a>
+      <div class= "  dropdown-toggle-custom text-muted">Categories</div>
+      <span class="text-muted text-decoration-none">Rating</span>
+    </div>
+  
+    <!-- Dropdown Categories -->
+    <div class="dropdown-content-custom">
+      <div class="category-grid">
+        <div class="category-item">Bitcoin</div>
+        <div class="category-item">Market Nes</div>
+        <div class="category-item">Meme coin</div>
+        <div class="category-item">Altcoins</div>
+        <div class="category-item">NFT</div>
+        <div class="category-item">DeFi</div>
+      </div>
+    </div>
   </div>
+
 
   <!-- Konten Harga -->
   <div class="container py-5">
@@ -87,7 +102,7 @@
       </div>
       <hr class="border-secondary mt-4" />
       <div class="text-center small text-muted">
-        <p class="mb-0">API by <a href="https://www.coingecko.com/" class="text-decoration-none text-light" target="_blank" rel="noopener noreferrer">coingecko.com</a> | Program by Athar Aryasatya</p>
+        <p class="mb-0 oo">API by <a href="https://www.coingecko.com/" class="text-decoration-none text-light" target="_blank" rel="noopener noreferrer">coingecko.com</a> | Program by Athar Aryasatya</p>
       </div>
     </div>
   </footer>

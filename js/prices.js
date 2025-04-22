@@ -29,3 +29,6 @@
 
   fetchData();
   setInterval(fetchData, 1000); // Update tiap 4 detik
+
+
+  

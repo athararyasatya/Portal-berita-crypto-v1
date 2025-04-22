@@ -6,19 +6,18 @@
   <title>Portal Berita Crypto</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style/style.css" />
 </head>
 <body>
 
   <!-- Header -->
-  <!-- Header -->
   <div class="crypto-header d-flex justify-content-between align-items-center px-4 text-white py-3">
     <h2 class="m-0">Portal Berita Crypto</h2>
   </div>
-  
 
+  <!-- Harga Coin Marquee -->
   <div class="marquee-wrapper">
     <div class="marquee-content" id="coin-track">
       <div class="coin-row" id="coin-items"></div>
@@ -26,76 +25,176 @@
     </div>
   </div>
 
-
-  <!-- Tabs -->
-  <div class="d-flex justify-content-center gap-3 py-2 bg-grey border-bottom">
-    <span class="text-primary fw-bold">News</span>
+  <!-- Tabs Navigasi -->
+<!-- Tabs Navigasi -->
+<div class="d-flex justify-content-center gap-3 py-2 bg-grey border-bottom flex-column align-items-center ">
+  <div class="d-flex gap-3 tab-menu">
+    <span class="text-primary fw-bold  text-decoration-none">News</span>
     <a href="prices.html" class="text-muted text-decoration-none">Prices</a>
-
-    <span class="text-muted">Categories</span>
-    <span class="text-muted">Rating</span>
+    <div class="dropdown-toggle-custom text-muted">Categories</div>
+    <span class="text-muted text-decoration-none">Rating</span>
   </div>
 
-  <!-- Konten Utama -->
-  <div class="container py-4">
-    <!-- Berita Utama -->
-    <div class="row mb-4">
-      <div class="col-md-6">
-        <div class="bg-secondary text-white text-center d-flex align-items-center justify-content-center" style="height: 250px;">
-            <img src="assets/bitcoin.png" alt="Bitcoin" class="img-fluid h-100 w-100 object-fit-cover" />
-          </div>
-      </div>
-      <div class="col-md-6">
-        <h3 class="fw-bold">Bitcoin Naik Drastis</h3>
-        <p class="text-muted mb-1">2025/04/20</p>
-        <p>Bitcoin melonjak 5% setelah pengumuman terbaru dari pemerintah AS mengenai regulasi crypto yang lebih longgar.</p>
-        <div class="text-warning">★★★★★</div>
-      </div>
-    </div>
-
-    <!-- 3 Kolom Berita -->
-    <div class="row">
-  <div class="col-md-4">
-    <div class="bg-light p-3 shadow-sm h-100">
-      <div class="bg-secondary overflow-hidden" style="height: 120px;">
-        <img src="assets/eth.png" alt="Ethereum" class="w-100 h-100 object-fit-cover" />
-      </div>
-      <h6 class="mt-3">Ethereum Siap Upgrade</h6>
-      <p class="text-muted mb-1">2025/04/20</p>
-      <p class="small">Ethereum akan meluncurkan pembaruan besar yang menjanjikan peningkatan skalabilitas jaringan.</p>
-      <div class="text-warning">★★★★★</div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="bg-light p-3 shadow-sm h-100">
-      <div class="bg-secondary overflow-hidden" style="height: 120px;">
-        <img src="assets/etf.png" alt="ETF" class="w-100 h-100 object-fit-cover" />
-      </div>
-      <h6 class="mt-3">SEC Tunda ETF</h6>
-      <p class="text-muted mb-1">2025/04/19</p>
-      <p class="small">Komisi Sekuritas dan Bursa (SEC) kembali menunda keputusan mereka tentang ETF Bitcoin spot.</p>
-      <div class="text-warning">★★★★☆</div>
-    </div>
-  </div>
-
-  <div class="col-md-4">
-    <div class="bg-light p-3 shadow-sm h-100">
-      <div class="bg-secondary overflow-hidden" style="height: 120px;">
-        <img src="assets/solana.jpg" alt="Solana" class="w-100 h-100 object-fit-cover" />
-      </div>
-      <h6 class="mt-3">Solana Meningkat</h6>
-      <p class="text-muted mb-1">2025/04/18</p>
-      <p class="small">Solana mengalami lonjakan aktivitas transaksi karena integrasi baru dengan platform DeFi besar.</p>
-      <div class="text-warning">★★★★★</div>
+  <!-- Dropdown Categories -->
+  <div class="dropdown-content-custom">
+    <div class="category-grid">
+      <div class="category-item">Bitcoin</div>
+      <div class="category-item">Market Nes</div>
+      <div class="category-item">Meme coin</div>
+      <div class="category-item">Altcoins</div>
+      <div class="category-item">NFT</div>
+      <div class="category-item">DeFi</div>
     </div>
   </div>
 </div>
 
+
+
+
+
+  <!-- Konten Utama -->
+  <div class="container py-4">
+
+    <!-- Berita Utama -->
+    <div class="row align-items-start mb-5 g-2"><!-- g-3 untuk jarak antar kolom -->
+      <div class="col-md-6 d-flex justify-content-center">
+        <img src="assets/btc.png" alt="Berita BTC" class="img-fluid" style="max-height: 300px;">
+      </div>
+      <div class="col-md-6">
+        <h3 class="fw-bold" style="color: #b881ff;">
+          Pedagang Bitcoin meragukan 'signifikansi' kenaikan harga karena harga BTC mendekati $87K
+        </h3>
+        <p class="text-light small">2025/04/20</p>
+        <p class="text-light">
+          Data dari Cointelegraph Markets Pro dan TradingView menunjukkan BTC/USD berupaya menembus $86.000...
+        </p>
+        
+        <p class="text-light small fst-italic">by William Suberg</p>
+        <div class="text-warning">★★★★★</div>
+      </div>
+    </div>
+  
+
+    <!-- Daftar Berita Lainnya -->
+
+    
+    <div class="row g-4" id="news-list">
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/xrp.png" alt="Solana" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">Coinbase Derivatives mencantumkan kontrak berjangka XRP</h6>
+          <p class="text-muted mb-1">2025/04/23</p>
+          <p class="small">Coinbase telah mendaftarkan kontrak berjangka untuk token XRP di bursa derivatif AS, kata platform mata uang kripto itu pada tanggal 21 April.
+          </p>
+          <p class="text-light small fst-italic"> By Alex O Donnell</p>
+          <div class="text-warning">★★★★★</div>
+        </div>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm ">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/etth.png" alt="Ethereum" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">Sekarang bukan saatnya untuk kebangkitan kembali untuk Ethereum</h6>
+          <p class="text-muted mb-1">2025/04/20</p>
+          <p class="small">Penurunan aktivitas jaringan baru-baru ini menyoroti masalah mendalam di Ethereum, dan ini bermuara pada UX. 
+          Perlombaan untuk meningkatkan skala blockchain bukan hanya tentang TVL dan transaksi per detik (TPS). Ini tentang pengalaman pengguna dan pengembang
+           yang ikut menciptakan ekosistem. Kemudahan pengembangan dan ekosistem serta aplikasi pengembang yang dapat dioperasikan bersama adalah yang terpenting </p>
+          <p class="text-light small fst-italic">by Alon Muroch</p>
+          <div class="text-warning">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm ">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/sool.png" alt="Ethereum" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">ETF Spot Solana akan diluncurkan di Kanada minggu ini</h6>
+          <p class="text-muted mb-1">2025/04/20</p>
+          <p class="small">Dana yang diperdagangkan di bursa (ETF) Solana akan diluncurkan di Kanada pada tanggal 16 April, 
+            menurut analis Bloomberg Eric Balchunas.Dalam sebuah posting X pada tanggal 14 April, analis tersebut membagikan catatan klien pribadi dari TD Bank, sebuah lembaga keuangan Kanada,
+            yang mengklaim bahwa Komisi Sekuritas Ontario (OSC) memberikan lampu hijau kepada manajer aset Purpose, Evolve, CI dan 3iQ untuk menerbitkan ETF yang memegang SolanaSOL
+            $145,34 Kanada tidak memiliki badan sekuritas federal, dengan wilayah dan provinsinya menerapkan undang-undang sekuritas mereka sendiri</p>
+          <p class="text-light small fst-italic">by Alex O Donnel</p>
+          <div class="text-warning">★★★★★</div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/sol.png" alt="Solana" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">Solana menguat 20% terhadap Ethereum, tetapi apakah harga SOL $300 dapat dicapai?</h6>
+          <p class="text-muted mb-1">2025/04/18</p>
+          <p class="small">Pedagang kripto populer BitBull membagikan grafik berjangka CME di X yang menunjukkan harga SOL dapat menembus angka $300 berikutnya.
+            Pedagang tersebut mengutip konsolidasi harga Ether di sekitar $2.000 pada grafik CME sebelum menembus ke titik tertinggi sepanjang masa pada tahun 2021.
+            “SOL sekarang menunjukkan struktur yang sama pada grafik berjangka CME” karena diperdagangkan dengan kisaran $120 dan $130, </p>
+          <p class="text-light small fst-italic">By Nancy lullable</p>
+          <div class="text-warning">★★★★★</div>
+        </div>
+      </div>
+
+      
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm ">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/all.png" alt="Solana" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">Bitcoin 'menembus' saat kembali ke $87.000 setelah kemerosotan awal April</h6>
+          <p class="text-muted mb-1">2025/04/23</p>
+          <p class="small">Harga Bitcoin tampaknya mulai keluar dari periode konsolidasi yang panjang karena aset tersebut naik ke level tertinggi sejak akhir Maret.
+            melonjak di atas $87.400 pada tanggal 21 April, harga tertinggi sejak 28 Maret, menurut TradingView. Harga telah naik lebih dari $3.000 dari level terendah intraday sedikit di atas $84.000 pada tanggal 20 April.
+
+            5 alasan mengapa FARTCOIN naik lebih cepat dari yang lainnya
+          </p>
+
+          <p class="text-light small fst-italic"> by Martin Young</p>
+ 
+          <div class="text-warning">★★★★★</div>
+   
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="bg-light p-3 shadow-sm ">
+        <div class="bg-secondary overflow-hidden">
+            <img src="assets/fart.png" alt="Solana" class="w-100 h-100 object-fit-cover" />
+          </div>
+          <h6 class="mt-3">5 alasan mengapa FARTCOIN naik lebih cepat dari yang lainnya</h6>
+          <p class="text-muted mb-1">2025/04/23</p>
+          <p class="small">
+            Kehebohan media sosial Fartcoin melonjak 500%FARTCOIN tampaknya tengah menikmati gelombang baru spekulasi yang gila-gilaan,
+            dengan metrik media sosial yang menunjukkan peningkatan tajam dalam aktivitas daring.Volume sosial FARTCOIN (garis oranye) melonjak hampir 500% pada awal April,
+             mendahului kenaikan lebih dari 100% pada bulan tersebut, menurut sumber data LunarCrush.Pada 17 April, keterlibatan telah sedikit menurun, meskipun tetap tinggi
+              pada 177% di atas garis dasar. 
+          </p>
+
+          <p class="text-light small fst-italic"> By Yashu Gola</p>
+          <div class="text-warning">★★★★★</div>
+        
+        </div>
+      </div>
+
+
+      
+
+      
+    </div>
+
   </div>
 
-   <!-- Footer -->
-   <footer class="bg-dark text-white py-4">
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
     <div class="container">
       <div class="d-flex justify-content-between flex-wrap">
         <div>
@@ -121,11 +220,10 @@
       </div>
       <hr class="border-secondary mt-4" />
       <div class="text-center small text-muted">
-        <p class="mb-0">API by <a href="https://www.coingecko.com/" class="text-decoration-none text-light" target="_blank" rel="noopener noreferrer">coingecko.com</a> | Program by Athar Aryasatya</p>
+        <p class="mb-0 oo">API by <a href="https://www.coingecko.com/" class="text-decoration-none text-light fot" target="_blank" rel="noopener noreferrer">coingecko.com</a> | Program by Athar Aryasatya</p>
       </div>
     </div>
   </footer>
-
 
   <!-- Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
