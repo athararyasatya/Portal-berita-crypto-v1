@@ -79,6 +79,21 @@ body {
     color: #b388ff !important;
 }
 
+.lihat-selengkapnya {
+  color: #b388ff;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.lihat-selengkapnya:hover {
+  color: #d3b3ff;
+  text-decoration: underline;
+}
+
+
+
 footer {
     background-color: #1f1833;
     color: #ccc;
@@ -210,6 +225,83 @@ h3, h6 {
   background: #6d5a99;
 }
 
+/* Detail berita yes yes */
+.article-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+.article-container img {
+  margin: 2rem 0;
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+.article-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 1rem;
+}
+.article-meta {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1.5rem;
+}
+.article-container p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Style khusus untuk Modal Login */
+.custom-modal {
+  border-radius: 15px;
+  overflow: hidden;
+  background: #1e1e2f;
+  color: #fff;
+}
+
+.custom-modal .modal-header {
+  background-color: #2b2b40;
+}
+
+.custom-modal .btn-primary {
+  background-color: #4f46e5;
+  border: none;
+}
+
+.custom-modal .btn-primary:hover {
+  background-color: #4338ca;
+}
+
+.custom-modal p, 
+.custom-modal a {
+  color: #ccc;
+}
+.custom-modal a.text-primary {
+  color: #4f46e5;
+}
+
+.custom-modal .btn-close {
+  filter: invert(1);
+}
+
+/* bintang rate */
+.rating-stars .star {
+  font-size: 1.5rem;
+  color: gray;
+  cursor: pointer;
+}
+
+.rating-stars .star.selected {
+  color: gold;
+}
+
+/* Detail berita yes yes */
+
+
 /* Responsive */
 @media (max-width: 768px) {
   .category-grid {
@@ -233,6 +325,27 @@ h3, h6 {
     .oo {
       font-size: 10px;
     
+    }
+    .judul-berita {
+      font-size: 1.8rem;
+    }
+  
+    .article-meta {
+      font-size: 0.9rem;
+    }
+  
+    .komentar-box {
+      margin-top: 30px;
+      background: #2b2b40;
+      color: #fff;
+    }
+  
+    .komentar-box h5 {
+      font-size: 1.2rem;
+    }
+  
+    .user-comment p {
+      font-size: 0.95rem;
     }
     
   }

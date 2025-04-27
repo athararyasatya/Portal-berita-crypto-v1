@@ -107,3 +107,56 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const btnLogin = document.getElementById('btnLoginModal');
+  const komentarBaru = document.getElementById('tambah-komentar');
+  const btnTambahKomentar = document.getElementById('btnTambahKomentar');
+  const loginModal = document.getElementById('loginModal');
+  const stars = document.querySelectorAll('.rating-stars .star');
+  const btnKirim = document.getElementById('kirimKomentar');
+
+  let rating = 0; // Untuk menyimpan rating yang dipilih
+
+  btnLogin.addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Tutup modal login
+    const modalInstance = bootstrap.Modal.getInstance(loginModal);
+    modalInstance.hide();
+
+    // Tampilkan kolom komentar
+    komentarBaru.classList.remove('d-none');
+    btnTambahKomentar.classList.add('d-none');
+  });
+
+  // Handle klik pada bintang
+  stars.forEach(function(star) {
+    star.addEventListener('click', function() {
+      rating = parseInt(this.getAttribute('data-value'));
+
+      // Reset semua bintang
+      stars.forEach(function(s) {
+        s.classList.remove('selected');
+      });
+
+      // Kasih warna gold ke bintang yang dipilih dan sebelumnya
+      for (let i = 0; i < rating; i++) {
+        stars[i].classList.add('selected');
+      }
+    });
+  });
+
+  // Handle klik Kirim Komentar
+  btnKirim.addEventListener('click', function() {
+    if (rating === 0) {
+      alert("Silakan pilih rating terlebih dahulu!");
+      return;
+    }
+
+    alert("Komentar Berhasil Dikirim!\nRating Anda: " + rating + " Bintang 🌟");
+  });
+});
+
+

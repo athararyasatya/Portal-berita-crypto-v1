@@ -108,9 +108,24 @@ body {
     content: "▼";
     margin-right: 3px;
   }
+  td.img{
+    text-align: left;
+  }
   
+  td.price, td.volume, td.market-cap {
+    text-align: center;
+    width: 110px; /* bisa atur sesuai kebutuhan */
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+  td.change1h, td.change24h, td.change7d {
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
 
-   /* Dropdown Categories */
+
+  
 /* Dropdown container */
 
 .dropdown-toggle-custom.active {
@@ -129,7 +144,22 @@ transition: max-height 0.5s ease, padding 0.4s ease;
 width: 90%;
 }
 
+.crypto-table td, .crypto-table th {
+  vertical-align: middle;
+  padding: 0.75rem 1rem; /* default padding kanan-kiri */
+}
 
+.crypto-table td:nth-child(2),
+.crypto-table th:nth-child(2) {
+  text-align: left;
+  padding-left: 1rem; /* kecilin padding kiri */
+  width: 250px; /* kasih width supaya Coin gak terlalu melebar */
+}
+
+.crypto-table td:not(:nth-child(2)),
+.crypto-table th:not(:nth-child(2)) {
+  text-align: center;
+}
 
 .dropdown-content-custom.show {
 max-height: 400px;
@@ -165,6 +195,59 @@ transform: translateY(-3px);
 background: #6d5a99;
 }
 
+#scroll-top-btn {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0); /* gradasi ungu */
+  color: white;
+  border: none;
+  box-shadow: 0 6px 20px rgba(142, 45, 226, 0.5); /* bayangan ungu */
+  font-size: 22px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 999;
+}
+
+#scroll-top-btn:hover {
+  background: linear-gradient(135deg, #a4508b, #5f0a87); /* gradasi ungu tua saat hover */
+  transform: scale(1.1);
+  box-shadow: 0 8px 24px rgba(164, 80, 139, 0.7);
+}
+
+
+#load-more {
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  box-shadow: 0 6px 20px rgba(142, 45, 226, 0.5);
+  transition: all 0.3s ease;
+  overflow: visible;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#load-more:hover {
+  background: linear-gradient(135deg, #a4508b, #5f0a87);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(164, 80, 139, 0.7);
+}
+.text-center.mt-4 {
+  overflow: visible;
+}
+
+/* Parent div table tetap scrollable */
+.table-responsive {
+  overflow-x: auto;
+}
+
+
+
+
 /* Responsive */
 @media (max-width: 768px) {
 .category-grid {
@@ -195,13 +278,37 @@ background: #6d5a99;
       left: 0;
       z-index: 3;
     }
-  
-    .crypto-table th:nth-child(2),
-    .crypto-table td:nth-child(2) {
-      position: sticky;
-      left: 40px; /* Sesuaikan dengan lebar kolom pertama */
-      z-index: 4;
+
+    .crypto-table td, .crypto-table th {
+      vertical-align: middle;
     }
+    
+    .crypto-table td:nth-child(2), /* Coin Name */
+    .crypto-table th:nth-child(2) {
+      text-align: left;
+      padding-left: 0;
+    }
+    
+    .crypto-table td:not(:nth-child(2)),
+    .crypto-table th:not(:nth-child(2)) {
+      text-align: center;
+    }
+
+      #load-more {
+    padding: 9px 21px;
+    font-size: 13px;
+    border-radius: 25px;
+  }
+
+  #scroll-top-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+  
+ 
+
+    
 
   }
   
