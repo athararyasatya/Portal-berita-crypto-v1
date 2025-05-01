@@ -299,7 +299,128 @@ h3, h6 {
   color: gold;
 }
 
+
+
+
+.sidebar::-webkit-scrollbar {
+  width: 0px; /* untuk Chrome */
+}
+
+.news-item {
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 10px;
+}
+
+.youtube-section {
+  margin-top: 20px;
+}
+.sidebar-scroll {
+  background-color: #322C4A;
+  border-radius: 10px;
+  padding: 15px;
+  max-height: none; /* biar dinamis */
+  max-height: 100vh;
+  scrollbar-width: none; /* Firefox */
+  overflow-y: auto;
+  scrollbar-width: thin;           /* Firefox */
+  scrollbar-color: #ccc transparent; /* Firefox */
+}
+
+
+
+.sidebar-scroll::-webkit-scrollbar {
+  width: 6px;                      /* Chrome/Safari */
+}
+
+.sidebar-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+.custom-comment-button {
+  background-color: #6f42c1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(111, 66, 193, 0.2);
+}
+
+.custom-comment-button:hover {
+  background-color: #5936a2;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(111, 66, 193, 0.35);
+}
+
+
+.berita-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.berita-item img {
+  width: 80px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.berita-item-title {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+.user-avatar {
+  width: 40px;
+  height: 40px;
+}
+
 /* Detail berita yes yes */
+
+
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* biar gak lonjong */
+  border-radius: 50%; /* bentuk lingkaran */
+  flex-shrink: 0; /* biar ga mengecil kalau ruang sempit */
+}
+
+
+.badge-kategori {
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+/* Warna per kategori */
+.badge-bitcoin {
+  background-color: #f1c40f; /* Kuning keemasan */
+}
+
+.badge-market-news {
+  background-color: #e74c3c; /* Merah terang */
+}
+
+.badge-altcoins {
+  background-color: #6f42c1; /* Ungu Bootstrap */
+}
+
+.badge-meme-coin {
+  background-color: #fd7e14; /* Oranye */
+}
+
+.badge-nft {
+  background-color: #20c997; /* Teal */
+}
+
+.badge-defi {
+  background-color: #0d6efd; /* Biru Bootstrap */
+}
 
 
 /* Responsive */
